@@ -1,0 +1,97 @@
+:root{
+    --primary-color: #fc6a03;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Oooh Baby', cursive;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background: url(/img/moon_night.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+  
+h1{
+    margin: 0 auto;
+    font-size: 5em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+
+a{
+    margin: none;
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-decoration:none;
+    color: var(--primary-color);
+}
+
+a:hover, 
+:focus{
+    padding: .7em;
+    opacity: .6;
+    text-decoration: underline;
+}
+
+a:active{
+    color: var(--primary-color);
+}
+
+/* Media Queries */
+
+@media (max-width: 900px){
+    h1{
+        font-size: 4em;
+    }
+    a{
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 720px){
+    h1{
+        font-size: 3em;
+    }
+    a{
+        margin: 1em;
+        padding: .7em;
+    }
+}
+
+@media (max-width: 530px){
+    h1{
+        font-size: 2.3em;
+        margin-bottom: 1em;
+    }
+    p{
+        font-size:1em;
+    }
+    a{
+        margin: 1em;
+        padding: .7em;
+        border: .1em solid var(--primary-color);
+    }
+}
+
+@media (min-width: 700px){
+    body{
+        background-size:cover;
+        background-position: center;
+    }     
+}
+
+
